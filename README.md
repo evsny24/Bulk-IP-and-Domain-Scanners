@@ -6,6 +6,7 @@ Usage of IP scanner:
 
     Replace apikey with your own VirusTotal API key.
     Prepare a CSV file (IP_list.csv) with the first cell called 'IP Address' and the IP addresses in the collumn below it.
+    Prepare a CSV file (IP_results.csv). This is where the output will be.
     Adjust file paths (input_file, output_file) as per your local directory structure.
     Run the script to initiate the scanning process.
 
