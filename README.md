@@ -12,6 +12,6 @@ Usage of IP scanner:
 
 Usage of Domain scanner:
 
-    Same as above
-    Yes, the names of the input and output files along with the header of the input file are still called IP
-    Just add domains in the collumn of the input file in the same place you would put the IP addresses
+    Same as above.
+    Yes, the names of the input and output files along with the header of the input file are still called IP.
+    Just add domains in the collumn of the input file in the same place you would put the IP addresses.
