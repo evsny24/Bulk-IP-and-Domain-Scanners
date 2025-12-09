@@ -7,7 +7,9 @@ Note: ChatGPT was used to assist in this process.
 Requirements
 
 Python 3.x
+
 requests library
+
 Install the required Python package using pip:
 
     pip install requests
