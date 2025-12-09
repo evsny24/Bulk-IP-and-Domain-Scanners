@@ -6,11 +6,11 @@ Note: ChatGPT was used to assist in this process.
 
 Requirements
 
-Python 3.x
+- Python 3.x
 
-requests library
+- requests library
 
-Install the required Python package using pip:
+- Install the required Python package using pip:
 
     pip install requests
 
