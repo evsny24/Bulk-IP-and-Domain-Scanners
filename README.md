@@ -19,13 +19,13 @@ Usage of IP scanner:
 - In the script file, replace APIKEY with your own VirusTotal API key.
 - Prepare a CSV file (IP_list.csv) with the first cell called 'IP Address' and the IP addresses in the collumn below it.
 - Prepare a CSV file (IP_results.csv). This is where the output will be.
-- In the script file, adjust file paths (input_file, output_file) as per your local directory structure.
-- If you have a premium API key, you can adjust the cooldown which by default is the free tier or 4 scans per minute.
+- In the script file, adjust file paths (INPUT_FILE, OUTPUT_FILE) as per your local directory structure.
+- If you have a premium API key, you can adjust RATE_SLEEP which by default is the free tier or 4 scans per minute.
 - Run IP_scan.py
 
 Usage of Domain scanner:
 
 - Basically same as above.
-- Yes, the names of the input and output files along with the header of the input file are still called IP.
+- Yes, the names of the input and output files along with the header of the input file are still called IP. This is so you don't have to switch the names of everything when you switch between scripts, just the inputs.
 - Just add domains in the collumn of the input file in the same place you would put the IP addresses.
 - Run domain_scan.py
