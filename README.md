@@ -1,6 +1,6 @@
 # Bulk-IP-and-Domain-Scanners
 Scans a list of IP addresses or Domain names with your VirusTotal API key
-This is a modification of ph1nx's VirusTotal-Bulk-IP-Scanner found at https://github.com/ph1nx/VirusTotal-Bulk-IP-Scanner?tab=readme-ov-file#virustotal-bulk-ip-scanner to include more fieldnames. 
+This is a modification of ph1nx's VirusTotal-Bulk-IP-Scanner found at https://github.com/ph1nx/VirusTotal-Bulk-IP-Scanner?tab=readme-ov-file#virustotal-bulk-ip-scanner to include more fieldnames and to make a script that works for domain names.
 
 Note: ChatGPT was used to assist in this process.
 
