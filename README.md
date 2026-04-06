@@ -1,31 +1,96 @@
-# Bulk-IP-and-Domain-Scanners
-Scans a list of IP addresses or Domain names with your VirusTotal API key.
-I took inspiration from ph1nx's bulk IP scanner found at https://github.com/ph1nx/VirusTotal-Bulk-IP-Scanner.git, but this script has been completely changed to the point where it would not make sense for this to be a fork. I wrote this to include more fieldnames than the original and to make a script that also works for domain names.
+# Bulk IP and Domain Scanners
 
-Note: Fields are left blank when the information is not available.
+A Python-based tool that scans a list of IP addresses or domain names using the VirusTotal API and outputs detailed results to a CSV file.
 
-Requirements
+This project was inspired by ph1nx’s bulk IP scanner, but has been significantly redesigned and expanded. It includes additional data fields and supports both IP address and domain scanning within separate scripts.
+
+> **Note:** Fields in the output CSV will remain blank if the requested data is not available from VirusTotal.
+
+---
+
+## Features
+
+- Bulk scanning of IP addresses and domain names
+- Integration with the VirusTotal API
+- Expanded set of returned data fields compared to the original project
+- CSV-based input and output for easy data handling
+- Adjustable rate limiting for API usage tiers
+
+---
+
+## Requirements
 
 - Python 3.x
+- `requests` library
 
-- requests library
+---
 
-- Install the required Python package using pip:
+## Installation
 
-        pip install requests
+Install dependencies with:
 
-Usage of IP scanner:
+```bash
+pip install requests
+```
+## Usage
 
-- In the script file, replace APIKEY with your own VirusTotal API key.
-- Prepare a CSV file (IP_list.csv) with the first cell called 'IP Address' and the IP addresses in the collumn below it.
-- Prepare a CSV file (IP_results.csv). This is where the output will be.
-- In the script file, adjust file paths (INPUT_FILE, OUTPUT_FILE) as per your local directory structure.
-- If you have a premium API key, you can adjust RATE_SLEEP which by default is the free tier or 4 scans per minute.
-- Run IP_scan.py
+### 1. Set Your VirusTotal API Key
 
-Usage of Domain scanner:
+Replace the placeholder in your script:
 
-- Basically same as above.
-- Yes, the names of the input and output files along with the header of the input file are still called IP. This is so you don't have to switch the names of everything when you switch between scripts, just the inputs.
-- Just add domains in the collumn of the input file in the same place you would put the IP addresses.
-- Run domain_scan.py
+```python
+API_KEY = "your_api_key_here"
+```
+### 2. Prepare Input File
+
+Create a CSV file containing your IPs or domains.
+
+Example (`input.csv`):
+
+```csv
+target
+8.8.8.8
+example.com
+1.1.1.1
+```
+### 3. Run the Script
+
+For IP scanning:
+
+```bash
+python ip_scanner.py
+```
+For domain scanning:
+```
+python domain_scanner.py
+```
+### 4. Output
+
+Results will be saved to a CSV file (e.g., `output.csv`) with enriched data from VirusTotal.
+
+---
+
+## Notes on Rate Limiting
+
+VirusTotal enforces strict API rate limits depending on your plan.
+
+You can adjust delays in your script:
+
+```python
+time.sleep(15)  # Adjust based on your API tier
+```
+- Free tier: ~4 requests/minute  
+- Premium tiers allow higher throughput  
+
+---
+
+## Disclaimer
+
+This tool is intended for educational and security research purposes only. Ensure you comply with VirusTotal's terms of service when using their API.
+
+---
+
+## Credits
+
+- Inspired by ph1nx’s original bulk IP scanner  
+- Built and expanded for enhanced functionality and flexibility  
