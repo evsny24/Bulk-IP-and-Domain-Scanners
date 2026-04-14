@@ -92,5 +92,5 @@ This tool is intended for educational and security research purposes only. Ensur
 
 ## Credits
 
-- Inspired by ph1nx’s original bulk IP scanner  
+- Inspired by ph1nx’s original bulk IP scanner and edited by me with assistance from AI tools
 - Built and expanded for enhanced functionality and flexibility  
